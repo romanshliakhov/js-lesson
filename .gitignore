@@ -6,7 +6,6 @@
 *.pdf
 *.psd
 *.sublime*
-.jshintrc
 build/
 docs/
 node_modules/
