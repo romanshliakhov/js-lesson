@@ -21,3 +21,11 @@
 // const user = "Roman";
 
 // alert(`Hello , ${user}`);
+
+// console.log('arr' + ' - object');
+// console.log(4 + +'5');
+
+// const isChecked = false,
+//       isClose = false;
+
+// console.log(isChecked || !isClose);
