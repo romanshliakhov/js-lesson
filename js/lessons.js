@@ -29,3 +29,51 @@
 //       isClose = false;
 
 // console.log(isChecked || !isClose);
+
+// exercise 12
+
+// if ( 4 == 9) {
+//     console.log('Ok!');
+// } else {
+//     console.log('Error')
+// }
+
+// Вечное условие 
+
+// if (1) {
+//     console.log('Ok!');
+// } else {
+//     console.log('Error')
+// }
+
+// const num = 50;
+
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('More');
+// } else {
+//     console.log('Ok!');
+// }
+
+// Тернарный оператор
+
+// (num === 50) ? console.log('Ok!') : console.log('Error');
+
+// Конструкция switch 
+// const num = 51;
+
+// switch (num) {
+//     case 49:
+//         console.log('Error');
+//         break;
+//     case 100:
+//         console.log('Error');
+//         break;
+//     case 50:
+//         console.log('Correct');
+//         break;
+//     default:
+//         console.log('Not today');
+//         break;
+// }
