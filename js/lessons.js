@@ -30,7 +30,7 @@
 
 // console.log(isChecked || !isClose);
 
-// exercise 12
+// exercise 12-13
 
 // if ( 4 == 9) {
 //     console.log('Ok!');
@@ -77,3 +77,42 @@
 //         console.log('Not today');
 //         break;
 // }
+
+// Exercise 14
+
+// let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+// }
+// Пример выше - бесконечный цикл
+
+// 1й способ задавания цикла
+
+// let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// 2й способ задавания цикла
+
+// let num = 50;
+
+// do {
+//     console.log(num);
+//     num++;  
+// }
+// while (num < 55);
+
+// 3й способ задавания цикла
+
+let num = 50;
+
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        continue;
+    }
+    console.log(i);
+}
