@@ -108,11 +108,68 @@
 
 // 3й способ задавания цикла
 
-let num = 50;
+// let num = 50;
 
-for (let i = 1; i < 10; i++) {
-    if (i === 6) {
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 1; i < 10; i++) {
+//     if (i === 6) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// Exercise 16
+// let num = 20;
+
+// function showFirstMessage(text) {
+//     console.log(text);
+//     let num = 10;
+// }
+
+// showFirstMessage("Hello World!");
+// console.log(num);
+
+// function calc(a,b) {
+//     return (a + b);
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(10, 6));
+
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// const logger = function () {
+//     console.log("Hello"); 
+// };
+
+// logger();
+
+// const calc = (a, b) => a + b;
+
+// Exercise 17
+// const str = "test";
+// // console.log(str[2] = 'd');
+// console.log(str.toLowerCase());
+// console.log(str);
+
+// const fruit = "Some fruit";
+// console.log(fruit.indexOf("fruit"));
+
+// const logg = "Hello world";
+
+// console.log(logg.slice(6, 11));
+// console.log(logg.substring(6, 11));
+// console.log(logg.substr(6, 5));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = "12.2px";
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
