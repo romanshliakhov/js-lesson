@@ -483,4 +483,4 @@
 // // 3)
 // console.log(typeof(!!'44444'));
 
-// Lesson  26
+// Lesson  27
