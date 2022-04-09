@@ -646,3 +646,18 @@
 //         console.log('end');
 //     });
 // });
+
+// Lesson  35
+
+// const p = document.querySelectorAll('p');
+// console.log(p);
+
+// function loadScript(src) {
+//     const script = document.createComment('script');
+//     script.src = "js/practice.js";
+//     script.async = false;
+//     document.body.append(script);
+// }
+
+// loadScript("js/practice.js");
+// loadScript("js/some.js");
