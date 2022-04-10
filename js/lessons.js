@@ -706,3 +706,66 @@
 // btn.classList.add('red');
 // wrapper.append(btn);
 
+// Lesson  39
+// const btn = document.querySelector('.btn');
+// let timerID,
+//     i = 0;
+
+// function myAnimation() {
+//     const elem = document.querySelector('.box');
+//     let position = 0;
+
+//     const id = setInterval(frame, 10);
+//     function frame() {
+//         if (position == 300) {
+//             clearInterval(id);
+//         } else {
+//             position++;
+//             elem.style.top = position + 'px';
+//             elem.style.left = position + 'px';
+//         }
+//     }
+
+// }
+
+// btn.addEventListener('click', myAnimation);
+
+// function logger () {
+//     if (i == 3) {
+//         clearInterval(timerID);
+//     }
+//     console.log('text');
+//     i++;
+// }
+
+// let id = setTimeout( function log(){
+//     console.log('Tik-tak');
+//     id = setTimeout(log, 500);
+// }, 500);
+
+// Lesson  40
+// const now = new Date('2022-04-10');
+// new Date.parse('2022-04-10');
+
+// console.log(now.setHours(40));
+// console.log(now);
+
+
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getHours());
+// console.log(now.getUTCHours());
+
+// console.log(now.getTimezoneOffset());
+// console.log(now.getTime());
+
+// let start = new Date();
+
+// for (let i =0; i < 100000; i++) {
+//     let some = i ** 3;
+// }
+
+// let end = new Date();
+
+// alert(`Цикл отработал за ${end - start} миллисекунд`);
