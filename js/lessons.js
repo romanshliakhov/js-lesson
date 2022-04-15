@@ -67,8 +67,7 @@
 // console.log(typeof(answers));
 // console.log(typeof(null));
 
-
-// Lesson 
+// Lesson 14
 
 // const category = "toys";
 
