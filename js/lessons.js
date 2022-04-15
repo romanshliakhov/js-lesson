@@ -50,6 +50,8 @@
 //     Alice: 800
 // };
 
+// Lesson  13
+
 // const result = confirm("Are you here?");
 // console.log(result);
 
@@ -62,7 +64,11 @@
 // answers[1] = prompt("Как ваша фамилия?", "");
 // answers[2] = prompt("Сколько вам лет?", "");
 
-// console.log(answers);
+// console.log(typeof(answers));
+// console.log(typeof(null));
+
+
+// Lesson 
 
 // const category = "toys";
 
