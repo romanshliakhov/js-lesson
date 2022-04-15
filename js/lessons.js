@@ -99,7 +99,7 @@
 
 // console.log(isChecked || !isClose);
 
-// Lesson  12-13
+// Lesson  20
 
 // if ( 4 == 9) {
 //     console.log('Ok!');
