@@ -1,4 +1,21 @@
-// let number = 4; 
+// Lesson  10
+// const vehincleBodyWidth = 5000;
+// const vehincleBodyLength = 4000;
+
+// console.log("Ширина кузова автомобиля: " + vehincleBodyWidth + ', длина ' + vehincleBodyLength);
+
+// ['vruru', 'ecrvrev', 'vvuug'].map(a =>) {}
+// Request
+// data 
+// response 
+
+// snake_case
+// UPPER_SNAKE_CASE
+// Kebab-case
+// PascalCase
+
+// const COLOR_RED = '#fff';
+// cosnt _apeBase = '';
 
 // const result = confirm("Are you here?");
 // console.log(result);
