@@ -69,9 +69,54 @@
 
 // console.log(personalMovieDB);
 
+// Домашнее задание к уроку 21:
+// 1. Что выведет в консоль код?
+// console.log( NaN || 2 || undefined ); // - Мой ответ 2, правильно
+// console.log( NaN && 2 && undefined ); // - Мой ответ Nan, правильно
+// console.log( 1 && 2 && 3 ); // Мой ответ 3, правильное
+// console.log( !1 && 2 || !3 ); // Мой ответ вернетcзначение  '!3', в целом да, точное значение вернет false
+// console.log( 25 || null && !3 ); // Мой ответ 25, правильно
+// console.log( NaN || null || !3 || undefined || 5); // Мой ответ 5, правильно
+// console.log( NaN || null && !3 && undefined || 5); // Мой ответ false, правильный ответ 5. Ошибка в неправильном выполнении вычислений
+// console.log( 5 === 5 && 3 > 1 || 5); // Мой ответ 3, ответ true, что по сути правда
 
-// Задание на урок 15:
-/* Задание на урок:
+// 2. Выполняется ли условие?
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+ 
+// if (hamburger === 3 && cola || fries === 3 && nuggets) {
+//    console.log('Done!')
+// }
+
+// Выполнится, так как левая часть false, а правая true. Оператор   && работает, когда один из вариантов true. Результат выполняется.
+
+// 3. Выполняется ли условие?
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+ 
+// if (hamburger || cola || fries === 3 || nuggets) {
+//    console.log('Done!')
+// }
+
+// Выполнится, так как первые 3 значения false, а nuggets true. Оператор && работает, когда один из вариантов true. Результат выполняется.
+
+// 4. Выполняется ли условие?
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+ 
+// if (hamburger && cola || fries === 3 && nuggets) {
+//    console.log('Done!')
+// }
+
+// Не выполнится, так как оба значения false. Результат в консоли не выолняется.
+
+/* Задание на урок 15:
 
 1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
 
