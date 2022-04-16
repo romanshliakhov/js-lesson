@@ -267,7 +267,7 @@
 //     }
 // }
 
-// Lesson  16
+// Lesson  
 // let num = 20;
 
 // function showFirstMessage(text) {
