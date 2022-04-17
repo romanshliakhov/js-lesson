@@ -345,7 +345,8 @@
 // function doNothing () {};
 // console.log(doNothing() === undefined);
 
-// Lesson 17
+// Lesson 28
+
 // const str = "test";
 // // console.log(str[2] = 'd');
 // console.log(str.toLowerCase());
