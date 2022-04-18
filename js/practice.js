@@ -445,7 +445,144 @@
 
 // writeYourGenres();
 
-// Домашнее задание к уроку 
+// Домашнее задание к уроку 29
+
+// 1. Создайте функцию, которая будет вычислять обьем и площадь полной поверхности куба. Эта функция принимает в себя целое число со значениями длины ребра куба. Ответ выведите в формате строки, который изображен в примерах. 
+// Если в функцию попал неправильный аргумент или вычислить значения невозможно - вывести строку "При вычислении произошла ошибка"
+// Пример: calculateVolumeAndArea(5) => "Обьем куба: 125, площадь всей поверхности: 150"
+
+// function calculateVolumeAndArea(lenght) {
+//     if(typeof(lenght) !== 'number' || lenght < 0 || !Number.isInteger(lenght)) {
+//         return 'При вычислении произошла ошибка';
+//     }
+
+//     let volume = 0,
+//         area = 0;
+
+//     volume = lenght * lenght * lenght;
+//     area = 6 * (lenght * lenght);
+
+//     return `Обьем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
+
+// calculateVolumeAndArea();
+// console.log(calculateVolumeAndArea(15));
+
+
+// 2. Напишите функцию, которая будет определять номер купе по переданному ей номеру места. 
+// Функция принимает только целое число от 1 до 36.
+// Если переданный аргумент не число, отрицательное или дробное - возвращается сообщение: "Ошибка. Проверьте правильность введенного номера места"
+// Если число 0 или больше 36, то сообщение: "Таких мест в вагоне не существует"
+// Пример: getCoupeNumber(33) => 9
+
+// function getCoupeNumber(seat) {
+//     if (typeof(seat) !== 'number' || seat < 0 || !Number.isInteger(seat)) {
+//         return "Ошибка. Проверьте правильность введенного номера места";
+//     }
+
+//     if (seat === 0 || seat > 36) {
+//         return 'Таких мест в вагоне не существует';
+//     }
+
+//     for (let i = 4; i <= 36; i = i + 4) {
+//         if (seat <= i) {
+//             return Math.ceil(i/4);
+//         }
+//     }
+// }
+
+// getCoupeNumber();
+// console.log(getCoupeNumber(33));
+// console.log(getCoupeNumber(37));
+
+
+// 3. Создайте функцию, которая принимает в себя целое число минут и возвращает время в нужном формате строки. Обратите на окончание слова "час" - оно меняется в зависимости от цифры. Если вместо аргумента приходит не число, дробное или отрицательное число - функция возвращает строку "Ошибка, проверьте данные"
+// Пример: getTimeFromMinutes(150) => "Это 2 часа и 30 минут"
+// getTimeFromMinutes(50) => "Это 0 часов и 30 минут"
+
+// function getTimeFromMinutes(minutesTotal) {
+//     if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+//         return "Ошибка, проверьте данные";
+//     }
+
+//     const hours = Math.floor(minutesTotal / 60);
+//     const minutes = minutesTotal % 60;
+
+//     let hoursStr = '';
+
+//     switch (hours) {
+//         case 0: 
+//             hoursStr = 'часов';
+//             break;
+//         case 1:
+//             hoursStr = 'час';
+//             break;
+//         case 2:
+//         case 3:
+//         case 4:
+//             hoursStr = 'часа';
+//             break;
+//         default:
+//             hoursStr = 'часов';
+//     }
+
+//     return `Это ${hours} ${hoursStr} и ${minutes} минут` ;
+// }
+
+// getTimeFromMinutes();
+// console.log(getTimeFromMinutes(150));
+// console.log(getTimeFromMinutes(50));
+
+
+// 4. Напишите функцию, которая принимает в себя 4 числа и возвращает самое большее из них. Если один из аргументов не является числом - возвращает 0. Дробные числа разрешены.
+// Пример: findMaxNumber(1, 5, 6.6, 11) => 11
+// findMaxNumber(1, 4, '5', 10) => 0
+
+// function findMaxNumber(a, b, c, d) {
+//     if (typeof(a) !== 'number' || typeof(b) !== 'number' || typeof(c) !== 'number' || typeof(d) !== 'number') {
+//         return 0;
+//     } else {
+//         return Math.max(a, b ,c, d);
+//     }
+// }
+
+// findMaxNumber();
+// console.log(findMaxNumber(1, 5, 6.6, 11));
+// console.log(findMaxNumber(1, 4, '5', 10));
+
+
+// 5. Создайте функцию, которая будет принимать в себя один аргумент - целое положительное число. Она должна возвращать строку, в которой будут через пробел выведены числа Фибонначи. Причем, их количество должно быть равно переданному аргументу. 
+// Если переданный аргумент не число - вернуть пустую строку. Решать без применения рекурсии. 
+// Пример: fib(4) => "0 1 1 2"
+
+// function fib(num) {
+//     if (typeof(num) !== 'number' || num < 0 || !Number.isInteger(num)) {
+//         return '';
+//     }
+
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
+
+//     for (let i = 0; i < num; i ++) {
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//         } else {
+//             result += `${first} `;
+//         }
+
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
+
+//     return result;
+// }
+
+// fib();
+// console.log(fib(4));
+// console.log(fib(7));
+
 
 // Задание на урок 24:
 // 1) У нас уже есть рабочее приложение, состоящее из отдельных функций. Представьте, что перед вами стоит задача переписать его так, чтобы все функции стали методами объекта personalMovieDB.
