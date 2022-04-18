@@ -583,6 +583,172 @@
 // console.log(fib(4));
 // console.log(fib(7));
 
+// Домашнее задание к уроку 35
+// 1. Напипите функцию showExperience, которая будет принимать в себя обькт со всеми данными и возвращать строку с опытом. 
+// Пример: showExperience(personalPlanPeter) => '1 mounth'
+// P.S. Желательно использовать деструктуризацию, но не обязательно. 
+// 2. Напишите функцию showProgrammingLangs, которая будет принимать в себя обьект со всеми данными и возвращать строку в нужном виде. 
+// Пример: showProgrammingLangs(personalPlanPeter) => 'Язык js изучен на 20%. Язык php изучен на 10%'
+// Пример функция должна рабоать вне зависимости от количества языков. Если ни один не указан, то возвращается пустая строка.
+// P.S. Для переноса строки используется \n в конце строки.
+// 3. Создайте метод showAgeAndLangs внутри обьект personalPlanPeter. При его вызове метод будет принимать в себя обьект и вовращать строку в нужном виде. 
+// Пример: personalPlanPeter.showAgeAndLangs(personalPlanPeter) => 'Мне 29 и я владею языками: RU ENG'
+// Заметьте, что возраст и языки подставляются автоматически из обьекта, а языки всегда в верхнем регистре. Если данные в обьекте поменяются, то и сообщение тоже изменится.
+
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'
+//         },
+//         exp: '1 month'
+//     },
+//     showAgeAndLangs: function(plan) {
+//         const {age} = plan;
+//         const {languages} = plan.skills;
+
+//         let str = `Мне ${age} и я владею языками: `;
+
+//         languages.forEach(lang => {
+//             str += `${lang.toUpperCase()} `;
+//         });
+
+//         return str;
+//     }
+// };
+
+// personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+// console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
+
+// function showExperience(plan) {
+//     const {exp} = plan.skills;
+//     return exp;
+// }
+
+// showExperience(personalPlanPeter);
+// console.log(showExperience(personalPlanPeter));
+
+// function showProgrammingLangs(plan) {
+//     let str = '';
+//     const {programmingLangs} = plan.skills;
+//     for (let key in programmingLangs) {
+//         str += `Язык ${key} изучен на ${programmingLangs[key]}\n`
+//     }
+
+//     return str;
+// }
+
+// showProgrammingLangs(personalPlanPeter);
+// console.log(showProgrammingLangs(personalPlanPeter));
+
+// 1. Напишите функцию showFamily, которая будет принимать в себя массив строк возвращать сообщение в нужном формате.
+// Пример: showFamily(family) => "Семья состоит из: Peter Ann Alex Linda"
+// Имена подставляются автоматически из массива. Если массив пустой, то выводится сообщение 'Семья пустая'
+
+// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+// function showFamily(arr) {
+//     let str = '';
+
+//     arr.length === 0 ? str = 'Семья пуста' : str = 'Семья состоит из: ';
+
+//     arr.forEach(member => {
+//         str += `${member} `;
+//     });
+
+//     return str;
+// }
+
+// showFamily(family);
+// console.log(showFamily(family));
+
+// 2. Напииште функцию standardizeStrings, которая будет принимать в себя массив строк и будет выводить в консоль эти строки в нижнем регистре. 
+// Пример: lisbon rome milan dublin
+
+// const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+// function standardizeStrings(arr) {
+//     let str = '';
+
+//     arr.forEach(city => {
+//         str += `${city.toLowerCase()}` + '\n';
+//     });
+
+//     return str;
+// }
+
+// standardizeStrings(favoriteCities);
+// console.log(standardizeStrings(favoriteCities));
+
+// 3. Напишите функцию reverse, которая принимает в себя строку и возвращает эту строку в обратном порядке.
+// Пример: const someString = 'This is some strange string';
+// Функцию можно приненить к любой строке. Если в функцию приходит не строка - вернуть сообщение 'Ошибка' 
+
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+//     if (typeof(str) !== 'string') {
+//         return 'Ошибка!';
+//     }
+
+//     return str.split('').reverse().join('');
+
+//     // При помощи цикла
+//     // let newStr = '';
+
+//     // for (let i = str.length - 1; i >=0; i--) {
+//     //     newStr += str[i];
+//     // }
+
+//     // return newStr;
+// }
+
+// reverse(someString);
+// console.log(reverse(someString));
+
+// 4. Представьте такую реальную ситуацию. У вас банкомат, который выдает деньги из двух разных банков в разных валютах.
+// Один банк основной с базовыми валютами, второй дополнительный с прочими валютами. 
+// Вам нужно создать главную функцию availableCurr, которая принимает два аргумента: первый - это массив со всеми доступными валютами из двух банков сразу(сейчас представим, что они не могут повторяться), второй - необязательный аргумент, который указывает ту валюту, которая сейчас закончилась в банкомате. Если массив в первом аргументе пустой - то функция возвращает строку "Нет достапных валют". Функция возвращает строку в нужном виде с нумерацией валют 
+// Пример: availableCurr(['UAH' , 'RUB', 'CNY'], 'CNY')
+// Вернет строку:
+// Доступные валюты: 
+// 1 - UAH
+// 2 - RUB
+// Заметьте: 
+// - CHY изчес из списка валют, значит такая валюта закончилась 
+// - После валюты: стоит перенос строки \n, и после каждой валюты тоже
+// - Нумерация начинается с 1 
+// - Данные для первого аргумента должны приходить сразу из двух банков, причем сначала baseCurrencies, потом additionalCurrencies по порядку
+
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+// function availableCurr(arr, missingCurr) {
+//     let str = '';
+//     arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
+
+//     arr.forEach(function(curr, i) {
+//         if (curr !== missingCurr) {
+//             str += `${i + 1} - ${curr}\n`;
+//         }
+//     });
+
+//     // C помощью цикла
+//     // for (let i = 0; i < arr.length; i++) {
+//     //     if (arr[i] === missingCurr) {
+//     //         continue;
+//     //     }
+//     //     str += `${i + 1} - ${arr[i]}\n`;
+//     // }
+
+//     return str;
+// }
+
+// availableCurr(['UAH' , 'RUB', 'CNY'], 'CNY');
+// console.log(availableCurr(['UAH' , 'RUB', 'CNY'], 'CNY'));
 
 // Задание на урок 24:
 // 1) У нас уже есть рабочее приложение, состоящее из отдельных функций. Представьте, что перед вами стоит задача переписать его так, чтобы все функции стали методами объекта personalMovieDB.
