@@ -576,7 +576,8 @@
 // const newObj = {...q};
 
 
-// Lesson  23
+// Lesson  36
+
 // let str = "some";
 // let strObj = new String(str);
 
@@ -586,7 +587,7 @@
 // console.dir([1,2,3]);
 // const soldier = {
 //     health: 400,
-//     aromor: 100,
+//     armor: 100,
 //     sayHello: function() {
 //         console.log("hello");
 //     }
@@ -604,7 +605,7 @@
 
 // jonh.sayHello();
 
-// console.log(jonh.aromor);
+// console.log(jonh.armor);
 
 // Lesson  25
 // function hello() {
