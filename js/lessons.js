@@ -368,7 +368,8 @@
 // console.log(parseInt(test));
 // console.log(parseFloat(test));
 
-// Lesson 19
+
+// Lesson 31
 
 // function first() {
 //     // Do something
@@ -396,7 +397,9 @@
 
 // leadrJS('JavaScript', done);
 
-// Lesson  20
+
+// Lesson  32
+
 // const obj = new Object(); // - Одна из устаревших записей
 // const options = {
 //     name: 'test',
@@ -438,7 +441,7 @@
 // }
 // console.log(counter);
 
-// Lesson  21
+// Lesson  33
 
 // const arr = [2, 13, 26, 8, 10];
 // arr.sort(compareNum);
@@ -455,8 +458,6 @@
 // arr.forEach(function (item, i, arr) {
 //     console.log(`${i}: ${item} внутри массива ${arr}`);
 // });
-
-
 
 // arr.pop();
 // arr.push(10);
@@ -476,7 +477,9 @@
 // products.sort();
 // console.log(products.join('; '));
 
-// Lesson  22
+
+// Lesson  35
+
 // let a = 5,
 //     b = a;
 
@@ -571,6 +574,7 @@
 // };
 
 // const newObj = {...q};
+
 
 // Lesson  23
 // let str = "some";
