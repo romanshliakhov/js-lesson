@@ -811,9 +811,8 @@
 
 
 
+// Lesson  45
 
-
-// Lesson  31
 // const btn = document.querySelector('button'),
 //       btns = document.querySelectorAll('button'),
 //       overlay = document.querySelector('.overlay');
@@ -855,6 +854,8 @@
 
 //     console.log(event.target);
 // });
+
+
 
 // Lesson  32
 // console.log(document.head);
