@@ -733,7 +733,8 @@
 // }
 
 
-// Lesson  28
+
+// Lesson  42
 
 // const box = document.getElementById('box');
 // console.log(box);
@@ -756,9 +757,7 @@
 
 
 
-
-
-// Lesson  29
+// Lesson  43
 
 // const box = document.getElementById('box'),
 //       btns = document.getElementsByTagName('button'),
@@ -809,6 +808,10 @@
 // div.insertAdjacentHTML('afterend' , '<h2>Hello</h2>')
 
 // // div.textContent = 'Hello';
+
+
+
+
 
 // Lesson  31
 // const btn = document.querySelector('button'),
