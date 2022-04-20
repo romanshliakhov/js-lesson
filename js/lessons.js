@@ -857,7 +857,8 @@
 
 
 
-// Lesson  32
+// Lesson  46
+
 // console.log(document.head);
 // console.log(document.documentElement);
 // console.log(document.body.childNodes);
@@ -879,6 +880,8 @@
 
 //     console.log(node);
 // }
+
+
 
 // Lesson  34
 
