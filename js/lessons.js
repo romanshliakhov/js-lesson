@@ -996,8 +996,7 @@
 
 
 
-
-// Lesson  34
+// Lesson  49
 
 // window.addEventListener('DOMContentLoaded', () => {
 //     const box = document.querySelector('.box');
@@ -1022,7 +1021,9 @@
 //     });
 // });
 
-// Lesson  35
+
+
+// Lesson  50
 
 // const p = document.querySelectorAll('p');
 // console.log(p);
@@ -1036,6 +1037,9 @@
 
 // loadScript("js/practice.js");
 // loadScript("js/some.js");
+
+
+
 
 // Lesson  37
 // const btns = document.querySelectorAll('button');
