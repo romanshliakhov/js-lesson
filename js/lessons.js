@@ -1132,8 +1132,76 @@
 
 
 
+// Lesson 56
+
+// const obj = {
+//     name: 'Test',
+//     [Symbol('id')] : 1,
+//     getId: function () {
+//         return this[id];
+//     }
+// }
+
+// // let id = Symbol('id');
+// // let id2 = Symbol('id');
+// // // let id = Symbol(id);
+
+// // console.log(id == id2);
+
+// // obj[id] = 1;
+
+// console.log(obj[Object.getOwnPropertySymbols(obj)[0]]);
+// // console.log(obj[id]);
+
+// // for (let value in obj) console.log(value);
+
+// const myAwesomeDB = {
+//     movies: [],
+//     actors: [],
+//     [Symbol.for('id')]: 123
+// }
+
+// // Сторонний код библиотке
+// myAwesomeDB.id = '323232';
+
+// console.log(myAwesomeDB[Symbol.for('id')]);
+// console.log(myAwesomeDB);
 
 
+
+// Lesson 57
+// const birthday = Symbol('birthday');
+
+// const user = {
+//     name: 'Alex',
+//     surname: 'Smith',
+//     // birthday: '20/04/1993',
+//     [birthday] : '20/04/2022',
+//     showMyPublicDate: function () {
+//         console.log(`${this.name} ${this.surname}`);
+//     }
+// }
+// // Object.defineProperty(user, 'birthday', {value: prompt('Date?') , enumerable: true, configurable: true});
+
+// // console.log(Object.getOwnPropertyDescriptor(Math, 'PI'));
+// Object.defineProperty(user, 'showMyPublicDate', { enumerable: false});
+
+// for (let key in user) console.log(key);
+// console.log(Object.getOwnPropertyDescriptor(user, birthday));
+
+// Object.defineProperties(user, {
+//     name: {writable: false},
+//     surname: {writable: false}
+// })
+
+
+
+
+
+
+// Object.defineProperty(user, 'name', {writable: false});
+// Object.defineProperty(user, 'gender', {value: 'male'});
+// console.log(Object.getOwnPropertyDescriptor(user, 'gender'));
 
 
 
