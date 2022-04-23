@@ -1457,9 +1457,8 @@
 
 
 
+// Lesson  65
 
-
-// Lesson  39
 // const btn = document.querySelector('.btn');
 // let timerID,
 //     i = 0;
@@ -1478,7 +1477,6 @@
 //             elem.style.left = position + 'px';
 //         }
 //     }
-
 // }
 
 // btn.addEventListener('click', myAnimation);
@@ -1495,6 +1493,13 @@
 //     console.log('Tik-tak');
 //     id = setTimeout(log, 500);
 // }, 500);
+
+
+
+
+
+
+
 
 // Lesson  40
 // const now = new Date('2022-04-10');
