@@ -1,3 +1,5 @@
+// Практические урок 64
+// Создание табовм в проекте
 window.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tabheader__item');
     const tabsContent = document.querySelectorAll('.tabcontent');

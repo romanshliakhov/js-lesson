@@ -1410,7 +1410,6 @@
 
 
 
-
 // Lesson  63
 
 // const btns = document.querySelectorAll('button');
@@ -1455,6 +1454,10 @@
 // const btn = document.createElement('button');
 // btn.classList.add('red');
 // wrapper.append(btn);
+
+
+
+
 
 // Lesson  39
 // const btn = document.querySelector('.btn');
