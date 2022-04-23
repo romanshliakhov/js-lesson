@@ -1357,8 +1357,56 @@
 
 
 
+// Lesson 60
+
+// const arr = ['Alex', 'Ann', 'Oleg', 'Alex'];
+
+// function unique(arr) {
+//     return Array.from(new Set(arr));
+// }
+
+// // set.add('Ivan');
+// // set.add('Oleg');
+
+// console.log(unique(arr));
+
+// set.delete(value);
+// set.has(value);
+// set.clear();
+// set.size;
+
+// for (let value of set) console.log(value);
+
+// set.forEach((value, valueAgain, set) => {
+//     console.log(value, valueAgain);
+// });
+
+// console.log(set.values());
+// console.log(set.keys());
+// console.log(set.entries());
 
 
+
+// Lesson 61
+
+// const bigint = 12414124124124214214124124124124214n;
+
+// const sameBigInt = BigInt(12414124124124214214124124124124214);
+
+// console.log(typeof(bigint));
+// console.log(typeof(sameBigInt));
+
+// console.log(5n + 3n);
+// console.log(5n / 2n);
+// console.log(5n + 3);
+// console.log(Math.round(5n));
+
+// let bigint = 1n;
+// let number = 2;
+
+// console.log(bigint + BigInt(number));
+// console.log(Number(bigint) + number);
+// console.log(+bigint + number);
 
 
 // Lesson  37
