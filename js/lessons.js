@@ -1496,12 +1496,98 @@
 
 
 
+// Lesson  66
+
+// function func () {
+//     window.smth = 'string';
+// }
+
+// const someRes = getData();
+// const node = document.querySelector('.class');
+
+// setInterval(function() {
+//     if (node) {
+//         node.innerHTML = someRes;
+//     }
+// }, 1000);
+
+// function outer() {
+//     const potentialHugeArray = [];
+//     return function inner() {
+//         potentialHugeArray.push('Hello');
+//         console.log('hi!');
+//     }
+// }
+
+// const sayHello = outer();
+
+// function createElement() {
+//     const div = document.createElement('div');
+//     div.id = 'test';
+//     document.body.append(testDiv);
+// }
+
+// createElement();
+
+// function deleteElement() {
+//     document.body.removeChild(document.getElementById('test'));
+// }
+
+// deleteElement();
+
+
+// Lesson  67 
+
+// let user = {name: 'Iven'};
+
+// // const arr = [user];
+// let map = new WeakMap();
+// map.set(user, 'data');
+
+// user = null;
+
+// console.log(map);
+// // console.log(arr[0]);
+
+// let cache = new WeakMap();
+
+// function cacheUser(user) {
+//     if (!cache.has(user)) {
+//         cache.set(user, Date.now());
+//     }
+
+//     return cache.get(user);
+// }
+
+// let lena = {name: 'Elena'};
+// let alex = {name: 'Alex'};
+
+// cacheUser(lena);
+// cacheUser(alex);
+
+// lena = null;
+
+// console.log(cache.has(lena));
+// console.log(cache.has(alex));
+
+// let messages = [
+//     {text: 'Hello', from: 'Jonh'},
+//     {text: 'World', from: 'Alex'},
+//     {text: '...', from: 'M'},
+// ]
+
+// let readMessages = new WeakSet();
+
+// readMessages.add(messages[0]);
+// // readMessages.add(messages[1]);
+
+// readMessages.add(messages[0]);
+// messages.shift();
+// console.log(readMessages.has(messages[0]));
 
 
 
-
-
-// Lesson  40
+// Lesson  68
 // const now = new Date('2022-04-10');
 // new Date.parse('2022-04-10');
 
