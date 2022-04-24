@@ -1641,3 +1641,20 @@
 // console.log(style.display);
 
 // console.log(document.documentElement.scrollTop);
+
+
+
+
+// Lesson  74
+
+// const box = document.querySelector('.box');
+
+// let observer = new MutationObserver(mutationRecords => {
+//     console.log(mutationRecords);
+// });
+
+// observer.observe(box, {
+//     childList: true
+// });
+
+// observer.disconnect();
