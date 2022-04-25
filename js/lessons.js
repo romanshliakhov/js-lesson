@@ -1661,7 +1661,6 @@
 
 
 
-
 // Lesson  75
 
 // const num = new Number(3);
@@ -1690,3 +1689,119 @@
 
 // console.log(ivan);
 // console.log(alex);
+
+
+
+// Lesson  76
+
+// 1) Обычная функция: this = window, но если use strict = undefined
+
+// function showThis() {
+//     console.log(this);
+// }
+
+// showThis();
+
+// Практическая задача с собеседований
+// function showThis(a, b) {
+//     console.log(this);
+//     function sum() {
+//         console.log(this); // что выведет тутб какой контекст вызова у функции sum === undefined, потому что не важно где эта f запускается, важно что ответ будет window/undefined
+//         // return this.a + this.b; // будет ли работать эта комбинация, если нет, то как исправить
+//         return a + b; // === при помощи замыкания решается
+//     }
+
+//     console.log(sum());
+// }
+
+// showThis(4,5);
+
+// 2) Методы обьектов тоже функции. Контекст у вызова обьектов === сам обьект
+
+// const obj = {
+//     a: 20,
+//     b: 15,
+//     sum: function () {
+//         console.log(this); // тут контекст === самому обьекту
+//         function shout() {
+//             console.log(this); // контекст === undefined, обычная функция
+//         }
+//         shout();
+//     }
+// }
+
+// obj.sum();
+
+// 3) Оператор New. this в конструкторах и классах - это новый экземляр обьекта
+
+// function User(name, id) {
+//     this.name = name;
+//     this.id = id;
+//     this.human = true;
+//     this.hello = function() {
+//         console.log(`Hello ${this.name}`);
+//     }
+// }
+
+// let ivan = new User('Ivan', 23);
+
+// 4) Ручная привязка this: call(), apply(), bind()
+
+// function sayName(surname) {
+//     console.log(this);
+//     console.log(this.name + surname);
+// }
+
+// const user = {
+//     name: 'John'
+// };
+
+// sayName.call(user, 'Smith');
+// sayName.apply(user, ['Smith']);
+
+// function count(num) {
+//     return this*num;
+// }
+
+// const double = count.bind(2);
+// console.log(double(3));
+// console.log(double(13));
+
+
+// const btn = document.querySelector('button');
+
+// Стандартный обработчик события
+// btn.addEventListener('click', function () {
+//     this.style.backgroundColor = 'red';
+//     console.log(this);
+// });
+
+// Чаще всего используют такие записи с использованием event target и (e) =>
+// btn.addEventListener('click', (e) => {
+//     e.target.style.backgroundColor = 'red';
+//     console.log(this);
+// });
+
+// const obj = {
+//     num: 5,
+//     sayNumber: function() {
+//         const say = () => {
+//             console.log(this.num);
+//         };
+
+//         say();
+//     }
+// };
+
+// obj.sayNumber();
+
+// Полный вариант
+// const double = (a) => {
+//     return a * 2;
+// }
+
+// Сокращенный вариант
+// const double = a => a * 2;
+
+// console.log(double(4));
+
