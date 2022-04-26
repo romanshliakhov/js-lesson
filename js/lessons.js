@@ -1850,14 +1850,35 @@
 
 // Lesson 80
 
-const log = function(a, b, ...rest) {
-    console.log(a, b, rest);
-};
+// const log = function(a, b, ...rest) {
+//     console.log(a, b, rest);
+// };
 
-log('basis', 'rest', 'operator', 'usage');
+// log('basis', 'rest', 'operator', 'usage');
 
-function calcOrDouble(number, basis = 2) {
-    console.log(number * basis);
-}
+// function calcOrDouble(number, basis = 2) {
+//     console.log(number * basis);
+// }
 
-calcOrDouble(3);
+// calcOrDouble(3);
+
+
+
+// Lesson 82
+
+// const persone = {
+//     name: 'Alex',
+//     tel: '+74444444',
+//     parents: {
+//         mom: 'Olga',
+//         dad: 'Mike'
+//     }
+// };
+
+// // console.log(JSON.stringify(persone));
+// // console.log(JSON.parse(JSON.stringify(persone)));
+
+// const clone = JSON.parse(JSON.stringify(persone));
+// clone.parents.mom = 'Ann';
+// console.log(persone);
+// console.log(clone);
