@@ -125,7 +125,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     modal.addEventListener('click', (e) => {
-        if (e.target === modal || e.target.getAttribute('[data-close]') === '') {
+        if (e.target === modal || e.target.getAttribute('data-close') === '') {
             closeModal();
         }
     });
@@ -228,8 +228,9 @@ window.addEventListener('DOMContentLoaded', () => {
     ).render();
     
 
-    // Практические урок 84
+    // Практические урок 84 и 87
     // Реализация скрипта отправки данных на сервер
+    // Работа с Fetch API
 
     // Forms
 
@@ -256,10 +257,6 @@ window.addEventListener('DOMContentLoaded', () => {
             `;
             form.insertAdjacentElement('afterend', statusMessage);
 
-            const request = new XMLHttpRequest();
-            request.open('POST', 'sender.php');
-
-            request.setRequestHeader('Content-type', 'aplication/json');
             const formData = new FormData(form);
 
             const object = {};
@@ -267,25 +264,30 @@ window.addEventListener('DOMContentLoaded', () => {
                 object[key] = value;
             });
 
-            const json = JSON.stringify(object);
-
-            request.send(json);
-
-            request.addEventListener('load', () => {
-                if (request.status === 200) {
-                    console.log(request.response);
-                    showThanksModal(message.success);
-                    form.reset();  
-                    statusMessage.remove();
-                } else {
-                    showThanksModal(message.failure);
-                }
+            fetch('server.php', {
+                method: "POST",
+                headers: {
+                    'Content-type': 'aplication/json'
+                },
+                body: JSON.stringify(object)
+            })
+            .then(data => data.text())
+            .then(data => {
+                console.log(data);
+                showThanksModal(message.success);
+                form.reset();  
+                statusMessage.remove();
+            }).catch(() => {
+                showThanksModal(message.failure);
+            }).finally(() => {
+                form.reset();
             });
         });
     }
 
     // Практические урок 85
     // Реализация оповещения пользователя
+
 
     function showThanksModal(message) {
         const prevModalDialog = document.querySelector('.modal__dialog');
@@ -310,4 +312,17 @@ window.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }, 4000);
     }   
+
+    
+    // Практические урок 87
+    // Fetch API
+    // fetch('https://jsonplaceholder.typicode.com/posts', {
+    //     method: "POST",
+    //     body: JSON.stringify({name: 'Alex'}),
+    //     headers: {
+    //         'Content-type': 'application/json'
+    //     }
+    // })
+    //     .then((response) => response.json())
+    //     .then((json) => console.log(json));
 });
