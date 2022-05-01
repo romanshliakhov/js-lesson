@@ -2103,3 +2103,87 @@
 
 // console.log('12-34-56'.replace(/-/g, ':'));
 
+
+
+// Lesson 99
+
+// const persone = {
+//     name: 'Alex',
+//     age: 25,
+
+//     get userAge() {
+//         return this.age;
+//     },
+//     set userAge(num) {
+//         this.age = num;
+//     }
+// }
+
+// console.log(persone.userAge = 30);
+// console.log(persone.userAge);
+
+
+
+// Lesson 100
+
+// function User(name, age) {
+//     this.name = name;
+//     let userAge = age;
+
+//     this.say = function() {
+//         console.log(`Имя пользователя: ${this.name}, возвраст ${userAge}`);
+//     };
+
+//     this.getAge = function() {
+//         return userAge;
+//     };
+
+//     this.setAge = function(age) {
+//         if (typeof age === 'number' && age > 0 && age < 110) {
+//             userAge = age;
+//         } else {
+//             console.log('Недопустимое значение!');
+//         }
+//     }
+// }
+
+// const roman = new User('Roman', 30);
+// console.log(roman.name);
+// console.log(roman.getAge());
+
+// roman.setAge(27);
+// roman.setAge(300);
+// console.log(roman.getAge());
+
+// roman.say();
+
+// Тот же код на классах
+// class User {
+//     constructor (name, age) {
+//         this.name = name;
+//         this._age = age;
+//     }
+
+//     #surname = 'Shliakhov';
+
+
+//     say() {
+//         console.log(`Имя пользователя: ${this.name} ${this.#surname}, возвраст ${this._age}`);
+//     }
+
+//     get age() {
+//         return this._age;
+//     }
+
+//     set age(age) {
+//         if (typeof age === 'number' && age > 0 && age < 110) {
+//             this._age = age;
+//         } else {
+//             console.log('Недопустимое значение!');
+//         }
+//     }
+// }
+
+// const roman = new User('Roman', 30);
+// console.log(roman.surname);
+// roman.say();
