@@ -1,8 +1,6 @@
 // Практические урок 69-70
 // Создание таймера обратного отсчета
-function timer() {
-    const deadline = '2022-05-01';
-
+function timer(id, deadline) {
     function getTimeRemaining(endtime) {
         let days, hours, minutes, seconds;
         const t = Date.parse(endtime) - Date.parse(new Date());
@@ -60,7 +58,7 @@ function timer() {
         }
     }
 
-    setClock('.timer', deadline);
+    setClock(id, deadline);
 }
 
-module.exports = timer;
+export default timer;
